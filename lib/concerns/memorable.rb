@@ -4,16 +4,16 @@ module Memorable
   module ClassMethods
   
   def reset_all
-    self.all.clear
+    all.clear
   end
 
   def count
-    self.all.count
+    all.count
   end
   
-end
+  end
 
-module InstanceMethods
+  module InstanceMethods
 
     def initialize
       self.class.all << self

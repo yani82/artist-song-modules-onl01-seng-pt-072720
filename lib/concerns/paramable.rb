@@ -1,5 +1,5 @@
 require 'pry'
-module PARAMABLE
+module Paramable
   
   def to_param
     name.downcase.gsub(' ', '-')
